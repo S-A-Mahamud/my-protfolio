@@ -42,7 +42,7 @@
 .header-container {
     background-color: var(--background-color);
     padding-top: 50px;
-    background-image: url(/images/developer.png), url(/images/header_bg.png);
+    background-image: url("../images/developer.png"), url("../images/header_bg.png");
     background-repeat: no-repeat;
     background-position: 38px 38px, right bottom;
     background-size: 75px, 35%;
