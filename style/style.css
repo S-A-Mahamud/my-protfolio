@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font family */
+.font-open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* Shared styles */
+:root {
+    --primary-color: #FD6E0A;
+    --dark-1: #181818;
+    --dark-2: #474747;
+    --dark-3: #757575;
+    --background-color: #FFF8F3;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 18px 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+/* Container size */
+.container {
+    width: 83%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* header container styles */
+.header-container {
+    background-color: var(--background-color);
+    padding-top: 50px;
+    background-image: url(/images/developer.png), url(/images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: 38px 38px, right bottom;
+    background-size: 75px, 35%;
+}
+
+/* navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo h1 {
+    font-size: 2.8rem;
+    color: var(--dark-1);
+}
+
+.logo-text-color {
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 51px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dark-2);
+    transition: color 0.3s ease;
+    font-size: 1.25rem;
+}
+
+/* Banner section style */
+.banner-container {
+    /* border: 2px solid var(--primary-color); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 46px 0px 0px 165px;
+    /* margin: 0 auto; */
+}
+
+.banner-text-container {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    max-width: 650px;
+}
+
+.banner-heading-greting {
+    font-size: 3.5rem;
+    color: var(--dark-2);
+    font-weight: 600;
+}
+
+.banner-heading-name {
+    font-size: 5.3rem;
+    color: var(--dark-1);
+    font-weight: 700;
+}
+
+.banner-subheading {
+    font-size: 1.1rem;
+    color: var(--dark-3);
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-btn {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    margin-left: 47px;
+}
+
+.banner-image-container img {
+    /* width: 500px; */
+    vertical-align: middle;
+}
+
+/* About section styles */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--background-color);
+    margin: 130px auto;
+    padding: 131px 156px;
+    border-radius: 10px;
+}
+
+.about-address {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-title {
+    font-size: 2.3rem;
+    color: var(--dark-1);
+    font-weight: 700;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    color: var(--dark-3);
+    line-height: 30px;
+    margin: 30px 50px;
+}
+
+.about-address p {
+    font-size: 1.3rem;
+    color: var(--dark-3);
+}
+
+.about-address h4 {
+    font-size: 1.3rem;
+    color: var(--dark-2);
+}
+
+/* Experience section styles */
+
+.experience-section {
+    margin-bottom: 130px;
+}
+
+.experience-section-title {
+    font-size: 2.3rem;
+    color: var(--dark-1);
+    font-weight: 700;
+    text-align: center;
+}
+
+.experience-section-description {
+    font-size: 1.1rem;
+    color: var(--dark-3);
+    line-height: 30px;
+    /* margin: 20px 0px 80px 0px; */
+    max-width: 1140px;
+    text-align: center;
+    margin: 30px auto 50px;
+}
+
+/* Experience card container styles */
+.experience-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    /* margin: 80px 0px; */
+}
+
+.experience-card {
+    padding: 30px 33px;
+    /* border: 2px solid var(--primary-color); */
+    text-align: justify;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+}
+
+.experience-card-title {
+    font-size: 1.3rem;
+    color: var(--dark-1);
+    font-weight: 700;
+    margin: 30px auto 20px;
+}
+
+.experience-card-description {
+    color: var(--dark-3);
+}
+
+/* Resume section styles */
+.resume-section {
+    margin-bottom: 113px;
+}
+
+.resume-section .text-center {
+    text-align: center;
+}
+
+.resume-section h2 {
+    font-size: 2.3rem;
+    color: var(--dark-1);
+    text-align: center;
+    margin-bottom: 113px;
+}
+
+/* Resume container styles */
+.resume-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    margin: 50px auto;
+}
+
+.resume-education-container h3,
+.resume-experience-container h3 {
+    font-size: 1.8rem;
+    color: var(--dark-2);
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+
+.resume-education-container h4,
+.resume-experience-container h4 {
+    font-size: 1.5rem;
+    color: var(--dark-1);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.experience-company,
+.education-university {
+    font-size: 1.3rem;
+    color: var(--dark-3);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resume-education-container p,
+.resume-experience-container p {
+    color: var(--dark-3);
+    line-height: 30px;
+    max-width: 850px;
+}
+
+hr {
+    margin: 30px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--background-color);
+    /* padding: 20px 0;
+    text-align: center; */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 130px 0;
+}
+
+.social-container h3 {
+    font-size: 1.5rem;
+    color: var(--dark-1);
+    font-weight: 700;
+}
+
+.social-container p {
+    color: var(--dark-2);
+    margin: 21px 0 30px;
+}
+
+.contact-container h3 {
+    font-size: 2.3rem;
+    color: var(--dark-1);
+    font-weight: 700;
+}
+
+.contact-container form {
+    /* max-width: 600px; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 461px;
+    margin: 29px 0 24px;
+}
+
+.contact-container form input,
+.contact-container form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px 0;
+    color: var(--dark-3);
+}
